@@ -1,0 +1,153 @@
+  
+  .section-header {
+
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-block-color: #ECECEC;
+
+  }
+
+  .main-nav {
+      display: flex;
+      align-items: center;
+
+  }
+
+  .logo-web {
+      color: var(--brand-color);
+      font-family: "Raleway";
+      font-size: 26px;
+      line-height: 1.19;
+      text-decoration: none;
+      list-style: none;
+      font-weight: 700;
+  }
+
+  .logo-studio {
+      color: #000000;
+      font-family: "Raleway";
+      font-size: 26px;
+      line-height: 1.19;
+      text-decoration: none;
+      list-style: none;
+      font-weight: 700;
+  }
+
+
+
+
+  .navigation {
+      display: flex;
+      position: relative;
+      text-decoration: none;
+      list-style: none;
+      margin-left: 93px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background: none;
+      padding: 0;
+  }
+
+  .index-main::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 46px;
+      height: 4px;
+      background-color: #2196F3;
+  }
+
+  .portfolio-main::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 76px;
+      height: 4px;
+      background-color: #2196F3;
+  }
+
+  .navigation .navigation-item:not(:last-child) {
+      margin-right: 50px;
+  }
+
+  .navigation-item .item {
+      display: block;
+      color: var(--main-color);
+      font-style: normal;
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      transition-property: color;
+      transition-duration: 250ms;
+
+  }
+
+  .navigation .item:hover {
+      color: var(--brand-color);
+      background: none;
+
+  }
+
+  .navigation .item:focus {
+      color: var(--brand-color);
+      background: none;
+
+  }
+
+  .item {
+      color: var(--main-color);
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 1.62;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      list-style: none;
+  }
+
+  .adress-header {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      margin-left: auto;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 0;
+  }
+
+  .adress-header .navigation-item+.navigation-item {
+      margin-left: 50px;
+  }
+
+  .adress-header .adress-item {
+      color: #757575;
+      font-family: "Roboto";
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      font-weight: 500;
+      text-decoration: none;
+      list-style: none;
+      transition-property: color;
+      transition-duration: 250ms;
+
+  }
+
+  .adress-header .adress-item:hover {
+      color: var(--brand-color);
+      fill: var(--brand-color);
+  }
+
+  .adress-header .adress-item:focus {
+      color: var(--brand-color);
+      fill: var(--brand-color);
+  }
+
+  .adress-item::before {
+      margin-right: 10px;
+      content: "";
+  }
