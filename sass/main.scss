@@ -1,14 +1,21 @@
+@import "./utils/variables";
+
+@import"./components/common";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/preferents";
 @import "./components/example";
+@import "./components/team";
 @import "./components/customers";
 @import "./components/filter";
 @import "./components/card-set";
-@import "./components/form";
+@import "./components/overlay";
 @import "./components/footer-input";
 @import "./components/footer";
-@import "./components/pre-header"
+
+
+@import "./modal/checkbox";
+@import "./modal/modal";
 
 
 

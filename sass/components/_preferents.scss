@@ -54,11 +54,12 @@ img {
 .caption-text {
     display: block;
     width: 270px;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
-.caption-text:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .caption {
     color: var(--main-color);

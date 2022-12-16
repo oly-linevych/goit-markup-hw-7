@@ -53,6 +53,15 @@
     margin-left: auto;
     transition-property: color, background-color;
     transition-duration: 250ms;
+    &:hover {
+            color: var(--brand-color);
+            background-color: var(--wite-color);
+        }
+    
+    &:focus {
+            color: var(--brand-color);
+            background-color: var(--wite-color);
+        }
     
 
 }
@@ -60,15 +69,6 @@
     font-family: inherit;
 }
 
-.main-button:hover {
-    color: var(--brand-color);
-    background-color: var(--wite-color);
-}
-
-.main-button:focus {
-    color: var(--brand-color);
-    background-color: var(--wite-color);
-}
 
 .hide {
     display: none;

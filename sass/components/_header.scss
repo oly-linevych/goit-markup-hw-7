@@ -86,17 +86,7 @@
 
   }
 
-  .navigation .item:hover {
-      color: var(--brand-color);
-      background: none;
-
-  }
-
-  .navigation .item:focus {
-      color: var(--brand-color);
-      background: none;
-
-  }
+ 
 
   .item {
       color: var(--main-color);
@@ -106,6 +96,17 @@
       letter-spacing: 0.03em;
       text-decoration: none;
       list-style: none;
+    .navigation &:hover {
+            color: var(--brand-color);
+            background: none;
+    
+        }
+    
+        .navigation &:focus {
+            color: var(--brand-color);
+            background: none;
+    
+        }
   }
 
   .adress-header {
@@ -122,7 +123,7 @@
       margin-left: 50px;
   }
 
-  .adress-header .adress-item {
+   .adress-item {
       color: #757575;
       font-family: "Roboto";
       font-style: normal;
@@ -134,20 +135,17 @@
       list-style: none;
       transition-property: color;
       transition-duration: 250ms;
-
+        .adress-header &:hover {
+                color: var(--brand-color);
+                fill: var(--brand-color);
+            }
+        
+            .adress-header &:focus {
+                color: var(--brand-color);
+                fill: var(--brand-color);
+            }
   }
 
-  .adress-header .adress-item:hover {
-      color: var(--brand-color);
-      fill: var(--brand-color);
-  }
 
-  .adress-header .adress-item:focus {
-      color: var(--brand-color);
-      fill: var(--brand-color);
-  }
 
-  .adress-item::before {
-      margin-right: 10px;
-      content: "";
-  }
+  
