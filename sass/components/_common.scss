@@ -20,6 +20,11 @@ html {
 
 body {
     color: var(--main-color);
-    font-family: "Roboto";
+    font-family: var(--font-text);
+    margin: 0;
+}
+
+.hide {
+    display: none;
     margin: 0;
 }

@@ -12,26 +12,26 @@
   </head>
   <body>
  <section class="section-header">
-    <div class="container container-body"> 
-      <header class="header">
-        <nav class="main-nav">
-          <a href="/" class="logo-web">Web<span class="logo-studio">Studio</span></a>
+    <div class="container section-header__container"> 
+      <header class="header section-header__header">
+        <nav class="section-header__menu">
+          <span class="logo"> <a href="/" class="logo__web">Web<span class="logo__studio">Studio</span></a></span>
     
           <ul class="navigation">
-            <li class="navigation-item index-main"> <a href="#" class="item">Студія</a></li>
-            <li class="navigation-item"><a href="./portfolio.html" class="item">Портфоліо</a></li>
-            <li class="navigation-item"><a href="#" class="item">Контакти</a></li>
+            <li class="navigation__item index-main"> <a href="#" class="navigation__link">Студія</a></li>
+            <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
           </ul>
     
-          <ul class="adress-header">
-            <li class="navigation-item"><a href="mailto:" class="adress-item"> 
-              <svg class="post-icon" width="16px" height="12px">
+          <ul class="contact">
+            <li class="contact__item"><a href="mailto:" class="contact__adress-item"> 
+              <svg class="contact__post-icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com </a></li>
            
-              <li class="navigation-item"><a href="tel:+380961111111" class="adress-item">
-              <svg class="post-icon" width="10px" height="16px">
+              <li class="contact__item"><a href="tel:+380961111111" class="contact__adress-item">
+              <svg class="contact__post-icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a></li>
@@ -42,10 +42,11 @@
       </section>
 
     <main>
+      <!-----------------------------HERO------------------------>
     <section class="hero">
-          <div class="container hero-container">
-          <h1 class="slogan">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
+          <div class="container hero__container">
+          <h1 class="hero__slogan">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero__button-order" data-modal-open>Замовити послугу</button>
         </div>
     </section>
      <!-------------------------PREFERENS----------------->
@@ -289,55 +290,55 @@
         </ul>
         </div>
       </section> 
-    </main>
+    
     <!-----------------------------CUSTOMERS----------------->
        <section class="section">
           <div class="container ">
           
-            <h2 class="submite-text">Постійні клієнти</h2>
-            <ul class="customers-list">
-              <li class="custumers-item">
-                <a class="customers-link" href="#">
-                  <svg class="customers-icon" width="106px" height="60px">
+            <h2 class="container__submite-text">Постійні клієнти</h2>
+            <ul class="customers">
+              <li class="custumers__item">
+                <a class="customers__link" href="#">
+                  <svg class="customers__icon" width="106px" height="60px">
                     <use href="./images/icons.svg#icon-ya"></use>
                   </svg>
                 </a>
               </li>
              
-              <li class="custumers-item">
-                <a class="customers-link" href="#">
-                  <svg class="customers-icon" width="106px" height="60px">
+              <li class="custumers__item">
+                <a class="customers__link" href="#">
+                  <svg class="customers__icon" width="106px" height="60px">
                     <use href="./images/icons.svg#icon-companytag"></use>
                   </svg>
                 </a>
               </li>
-              <li class="custumers-item">
-                <a class="customers-link" href="#">
-                  <svg class="customers-icon" width="106px" height="60px">
+              <li class="custumers__item">
+                <a class="customers__link" href="#">
+                  <svg class="customers__icon" width="106px" height="60px">
                     <use href="./images/icons.svg#icon-company"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="custumers-item">
-                <a class="customers-link" href="#">
-                  <svg class="customers-icon" width="106px" height="60px">
+              <li class="custumers__item">
+                <a class="customers__link" href="#">
+                  <svg class="customers__icon" width="106px" height="60px">
                     <use href="./images/icons.svg#icon-foster"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="custumers-item">
-                <a class="customers-link" href="#">
-                  <svg class="customers-icon" width="106px" height="60px">
+              <li class="custumers__item">
+                <a class="customers__link" href="#">
+                  <svg class="customers__icon" width="106px" height="60px">
                     <use href="./images/icons.svg#icon-brand"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="custumers-item">
-                <a class="customers-link" href="#">
-                  <svg class="customers-icon" width="106px" height="60px">
+              <li class="custumers__item">
+                <a class="customers__link" href="#">
+                  <svg class="customers__icon" width="106px" height="60px">
                     <use href="./images/icons.svg#icon-companyline"></use>
                   </svg>
                 </a>
@@ -346,6 +347,8 @@
             </ul>
             </div>
        </section>
+    </main>
+
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="modal-close"data-modal-close > 
@@ -415,49 +418,50 @@
 </div>
 
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="details">
-        <a href="/" class="logo-web">Web<span class="logo-footer">Studio</span></a>
-        <ul class=address>
-          <li class="point-address"> <a class="item-address" href="#">Київ, пр-т Лесі Українки,26 </a></li>
-          <li class="point-address"> <a class="item-mail" href="mailto:">info@devstudio.com</a></li>
-          <li class="point-address"> <a class="item-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <div class="container footer__container">
+        <div class="footer__details">
+        <span class="logo"> <a href="/" class="logo__web">Web<span class="logo__studio">Studio</span></a></span>
+        <ul class="address">
+          <li class="address__point"> <a class="address__item" href="#">Київ, пр-т Лесі Українки,26 </a></li>
+          <li class="address__point"> <a class="address__mail" href="mailto:">info@devstudio.com</a></li>
+          <li class="address__point"> <a class="address__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
         </div>
 
-        <div class="footer-soc">
-          <h4 class="footer-title">ПРИЄДНУЙТЕСЬ</h4>
-          <ul class="soc-list">
-            <li class="soc-item">
-              <a class="soc-link footer-link" href="#">
-                <svg class="icon footer-icon" width="20px" height="20px">
+        <div class="join">
+          <h4 class="join__title">ПРИЄДНУЙТЕСЬ</h4>
+          <ul class="soc-list join__list">
+            <li class="soc-item join__item">
+              <a class="soc-link join__link" href="#">
+                <svg class="icon join__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-item">
-              <a class="soc-link footer-link" href="#">
-                <svg class="icon footer-icon" width="20px" height="20px">
+            <li class="soc-item join__item">
+              <a class="soc-link join__link" href="#">
+                <svg class="icon join__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-item">
-              <a class="soc-link footer-link" href="#">
-                <svg class="icon footer-icon" width="20px" height="20px">
+            <li class="soc-item join__item">
+              <a class="soc-link join__link" href="#">
+                <svg class="icon  join__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-item">
-              <a class="soc-link footer-link" href="#">
-                <svg class="icon footer-icon" width="20px" height="20px">
+            <li class="soc-item join__item">
+              <a class="soc-link join__link" href="#">
+                <svg class="icon  join__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedinnew"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+
      <div class="footer-wrapper">
       <p class="input-label-footer ">підпишіться на розсилку</p>
       <form class="modal-footer">

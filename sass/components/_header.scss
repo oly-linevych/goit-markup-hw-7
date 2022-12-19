@@ -6,16 +6,22 @@
       border-block-color: #ECECEC;
 
   }
-
-  .main-nav {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .section-header__menu {
       display: flex;
       align-items: center;
 
   }
 
-  .logo-web {
+  .logo__web {
       color: var(--brand-color);
-      font-family: "Raleway";
+      font-family: var(--font-logo);
       font-size: 26px;
       line-height: 1.19;
       text-decoration: none;
@@ -23,18 +29,15 @@
       font-weight: 700;
   }
 
-  .logo-studio {
+  .logo__studio {
       color: #000000;
-      font-family: "Raleway";
+    font-family: var(--font-logo);
       font-size: 26px;
       line-height: 1.19;
       text-decoration: none;
       list-style: none;
       font-weight: 700;
   }
-
-
-
 
   .navigation {
       display: flex;
@@ -66,29 +69,7 @@
       background-color: #2196F3;
   }
 
-  .navigation .navigation-item:not(:last-child) {
-      margin-right: 50px;
-  }
-
-  .navigation-item .item {
-      display: block;
-      color: var(--main-color);
-      font-style: normal;
-      font-family: "Roboto";
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      padding-top: 32px;
-      padding-bottom: 32px;
-      transition-property: color;
-      transition-duration: 250ms;
-
-  }
-
- 
-
-  .item {
+  .navigation__item {
       color: var(--main-color);
       cursor: pointer;
       font-size: 16px;
@@ -96,20 +77,43 @@
       letter-spacing: 0.03em;
       text-decoration: none;
       list-style: none;
-    .navigation &:hover {
-            color: var(--brand-color);
-            background: none;
-    
-        }
-    
-        .navigation &:focus {
-            color: var(--brand-color);
-            background: none;
-    
-        }
+
   }
 
-  .adress-header {
+  .navigation__item:not(:last-child) {
+      margin-right: 50px;
+  }
+
+  .navigation__link {
+    display: block;
+    color: var(--main-color);
+    font-style: normal;
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    text-decoration: none;
+    list-style: none;
+
+      .navigation &:hover {
+        color: var(--brand-color);
+         background: none;
+
+      }
+
+      .navigation &:focus {
+          color: var(--brand-color);
+          background: none;
+
+      }
+  }
+
+   .contact {
       display: flex;
       text-decoration: none;
       list-style: none;
@@ -119,13 +123,25 @@
       padding: 0;
   }
 
-  .adress-header .navigation-item+.navigation-item {
+     .contact__item {
+      color: var(--main-color);
+      cursor: pointer;
+      font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        list-style: none;
+    
+        }
+
+
+  .contact .contact__item+.contact__item {
       margin-left: 50px;
   }
 
-   .adress-item {
-      color: #757575;
-      font-family: "Roboto";
+   .contact__adress-item {
+    color: var(--text-color);
+    font-family: var(--font-text);
       font-style: normal;
       font-size: 14px;
       line-height: 1.14;
@@ -135,12 +151,13 @@
       list-style: none;
       transition-property: color;
       transition-duration: 250ms;
-        .adress-header &:hover {
+      
+          &:hover {
                 color: var(--brand-color);
                 fill: var(--brand-color);
             }
         
-            .adress-header &:focus {
+         &:focus {
                 color: var(--brand-color);
                 fill: var(--brand-color);
             }

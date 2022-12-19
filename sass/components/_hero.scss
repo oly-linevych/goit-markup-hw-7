@@ -13,8 +13,8 @@
 }
 
 
-.slogan {
-    color: var(--wite-color);
+.hero__slogan {
+    color: var(--white-color);
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -30,8 +30,8 @@
 
 }
 
-.main-button {
-    color: var(--wite-color);
+.hero__button-order {
+    color: var(--white-color);
     background-color: var(--brand-color);
     cursor: pointer;
     font-size: 16px;
@@ -55,22 +55,14 @@
     transition-duration: 250ms;
     &:hover {
             color: var(--brand-color);
-            background-color: var(--wite-color);
+            background-color: var(--white-color);
         }
     
     &:focus {
             color: var(--brand-color);
-            background-color: var(--wite-color);
+            background-color: var(--white-color);
         }
-    
-
-}
-.button {
-    font-family: inherit;
 }
 
 
-.hide {
-    display: none;
-    margin: 0;
-}
+
